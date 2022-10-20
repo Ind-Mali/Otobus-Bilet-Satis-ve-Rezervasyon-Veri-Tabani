@@ -1,9 +1,9 @@
 select * from Seferler
 
-select Kalkýs_Yeri, Varýs_Yeri, ABS(DATEDIFF(Hour, Kalkýs_Saati,Varýs_Saati)) as Tahmini_Varýs_Süresi from Seferler
+select Kalkis_Yeri, Varis_Yeri, ABS(DATEDIFF(Hour, Kalkis_Saati,Varis_Saati)) as Tahmini_Varis_Siresi from Seferler
 
-select * from Seferler order by Kalkýs_Yeri
+select * from Seferler order by Kalkis_Yeri
 
-select kalkýs_yeri, count(kalkýs_yeri) as kalkýþYeri from Seferler group by Kalkýs_Yeri
+select kalkis_yeri, count(kalkis_yeri) as kalkisYeri from Seferler group by Kalkis_Yeri
 
-select kalkýs_yeri,count(kalkýs_yeri) as kalkýþYeri, Varýs_yeri , count(Varýs_Yeri) as Varýs_Yeri from Seferler group by Kalkýs_Yeri,Varýs_Yeri
+select kalkis_yeri,count(kalkis_yeri) as kalkisYeri, Varis_yeri , count(Varis_Yeri) as Varis_Yeri from Seferler group by Kalkis_Yeri,Varis_Yeri
